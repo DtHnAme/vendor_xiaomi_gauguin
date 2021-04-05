@@ -435,7 +435,6 @@ PRODUCT_PACKAGES += \
     uimlpaservice \
     uimremoteclient \
     uimremoteserver \
-    workloadclassifier \
     xdivert \
     QAS_DVC_MSP \
     WfdService \
