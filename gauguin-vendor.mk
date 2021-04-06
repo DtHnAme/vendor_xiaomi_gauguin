@@ -399,8 +399,10 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/gauguin/proprietary/system_ext/lib64/vendor.qti.latency@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.latency@2.0.so \
     vendor/xiaomi/gauguin/proprietary/system_ext/lib64/vendor.qti.qspmhal@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.qspmhal@1.0.so \
     vendor/xiaomi/gauguin/proprietary/system_ext/lib64/vendor.qti.voiceprint@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.voiceprint@1.0.so \
+    vendor/xiaomi/gauguin/proprietary/product/vendor_overlay/30/lib/liboemcrypto.so:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/30/lib/liboemcrypto.so \
     vendor/xiaomi/gauguin/proprietary/product/vendor_overlay/30/lib/libspl.so:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/30/lib/libspl.so \
     vendor/xiaomi/gauguin/proprietary/product/vendor_overlay/30/lib/soundfx/libvolumelistener.so:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/30/lib/soundfx/libvolumelistener.so \
+    vendor/xiaomi/gauguin/proprietary/product/vendor_overlay/30/lib64/liboemcrypto.so:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/30/lib64/liboemcrypto.so \
     vendor/xiaomi/gauguin/proprietary/product/vendor_overlay/30/lib64/libspl.so:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/30/lib64/libspl.so \
     vendor/xiaomi/gauguin/proprietary/product/vendor_overlay/30/lib64/soundfx/libvolumelistener.so:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/30/lib64/soundfx/libvolumelistener.so
 
