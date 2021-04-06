@@ -39,6 +39,23 @@ cc_prebuilt_library_shared {
 	system_ext_specific: true,
 }
 
+cc_prebuilt_library_shared {
+	name: "libqct_resampler",
+	owner: "xiaomi",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/system_ext/lib/libqct_resampler.so"],
+		},
+	},
+	compile_multilib: "32",
+	check_elf_files: false,
+	prefer: true,
+	system_ext_specific: true,
+}
+
 android_app_import {
 	name: "CallFeaturesSetting",
 	owner: "xiaomi",
@@ -133,6 +150,17 @@ android_app_import {
 	name: "NetworkSetting",
 	owner: "xiaomi",
 	apk: "proprietary/system_ext/app/NetworkSetting/NetworkSetting.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "QTIDiagServices",
+	owner: "xiaomi",
+	apk: "proprietary/system_ext/app/QTIDiagServices/QTIDiagServices.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
@@ -487,6 +515,13 @@ dex_import {
 	name: "com.qualcomm.qti.uceservice-V2.2-java",
 	owner: "xiaomi",
 	jars: ["proprietary/system_ext/framework/com.qualcomm.qti.uceservice-V2.2-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "com.qualcomm.qti.uceservice-V2.3-java",
+	owner: "xiaomi",
+	jars: ["proprietary/system_ext/framework/com.qualcomm.qti.uceservice-V2.3-java.jar"],
 	system_ext_specific: true,
 }
 
